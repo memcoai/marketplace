@@ -42,7 +42,7 @@ npm install -g @memco/spark
 [Spark CLI](https://github.com/memcoai/spark-cli) is available as a plugin for Claude Code. The plugin can be installed from the marketplace:
 
 ```bash
-/plugin install spark-cli @MemCo
+/plugin install spark-teams-cli @MemCo
 ```
 
 The plugin provides the instructions for using the Spark CLI for Team organizations, which needs installation separately:
