@@ -19,7 +19,7 @@ After which, install any required plugins.
 Spark is available as a plugin for Claude Code. The plugin can be installed from the marketplace:
 
 ```bash
-/plugin install spark @MemCo
+/plugin install spark-mcp @MemCo
 ```
 
 For more information, see the [Spark plugin repository](https://github.com/memcoai/spark-skills).

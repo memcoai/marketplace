@@ -9,7 +9,7 @@
   },
   "plugins": [
     {
-      "name": "spark",
+      "name": "spark-mcp",
       "source": {
         "source": "github",
         "repo": "memcoai/spark-skills"
