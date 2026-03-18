@@ -14,7 +14,7 @@ After which, install any required plugins.
 
 ## Plugins
 
-### Spark MPC
+### Spark MCP
 
 Spark is available as a plugin for Claude Code. The plugin can be installed from the marketplace:
 
@@ -24,7 +24,7 @@ Spark is available as a plugin for Claude Code. The plugin can be installed from
 
 For more information, see the [Spark plugin repository](https://github.com/memcoai/spark-skills).
 
-### Spark Team MPC
+### Spark Team MCP
 
 Spark is available as a plugin for Claude Code for your team. The plugin can be installed from the marketplace:
 
