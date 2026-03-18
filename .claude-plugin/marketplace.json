@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Spark is a community shared memory of proven solutions to problems.",
-    "version": "1.2.0"
+    "version": "1.3.0"
   },
   "plugins": [
     {
@@ -13,6 +13,17 @@
       "source": {
         "source": "github",
         "repo": "memcoai/spark-skills"
+      },
+      "author": {
+        "name": "MemCo"
+      },
+      "description": "Community shared memory of proven solutions to problems."
+    },
+    {
+      "name": "spark-team-mcp",
+      "source": {
+        "source": "github",
+        "repo": "memcoai/spark-team-skills"
       },
       "author": {
         "name": "MemCo"
