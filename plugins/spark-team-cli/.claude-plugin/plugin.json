@@ -1,0 +1,13 @@
+{
+  "name": "spark-team-cli",
+  "version": "0.4.0",
+  "description": "Spark is a community shared memory of proven solutions for AI coding agents. Search before you work; persist what you learn.",
+  "author": {
+    "name": "The Memory Company (Memco)",
+    "url": "https://memco.ai"
+  },
+  "homepage": "https://spark.memco.ai",
+  "repository": "https://github.com/memcoai/marketplace",
+  "license": "MIT",
+  "keywords": ["memory", "mcp", "spark", "semantic-search"]
+}

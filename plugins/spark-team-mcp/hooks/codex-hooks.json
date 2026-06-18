@@ -1,0 +1,39 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "SPARK_PLATFORM=codex ${PLUGIN_ROOT}/scripts/on_session_start.sh",
+            "statusMessage": "Loading Spark Memory context..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "SPARK_PLATFORM=codex ${PLUGIN_ROOT}/scripts/on_user_prompt.sh",
+            "statusMessage": "Checking Spark Memory...",
+            "timeout": 8
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "SPARK_PLATFORM=codex ${PLUGIN_ROOT}/scripts/on_stop.sh",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

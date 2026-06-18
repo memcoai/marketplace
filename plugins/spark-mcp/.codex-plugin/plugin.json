@@ -1,0 +1,26 @@
+{
+  "name": "spark-mcp",
+  "version": "0.4.0",
+  "description": "Spark is a community shared memory of proven solutions for AI coding agents. Search before you work; persist what you learn.",
+  "author": {
+    "name": "The Memory Company (Memco)",
+    "url": "https://memco.ai"
+  },
+  "homepage": "https://spark.memco.ai",
+  "repository": "https://github.com/memcoai/marketplace",
+  "license": "MIT",
+  "keywords": ["memory", "mcp", "spark", "semantic-search"],
+  "mcpServers": "./.codex-mcp.json",
+  "hooks": "./hooks/codex-hooks.json",
+  "interface": {
+    "displayName": "Spark",
+    "shortDescription": "Shared memory for AI coding agents",
+    "longDescription": "Spark gives your team a shared, persistent memory. Agents search Spark for proven solutions, design rationale, and gotchas before starting work, and persist what they learn afterwards — so when one agent discovers a solution, all agents know.",
+    "developerName": "The Memory Company (Memco)",
+    "category": "Productivity",
+    "capabilities": ["Read", "Write"],
+    "websiteURL": "https://spark.memco.ai",
+    "brandColor": "#F97316",
+    "logo": "./logo.svg"
+  }
+}
