@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "spark-mcp",
-      "source": "./spark-mcp",
+      "source": "./plugins/spark-mcp",
       "author": {
         "name": "MemCo"
       },
@@ -18,7 +18,7 @@
     },
     {
       "name": "spark-team-mcp",
-      "source": "./spark-team-mcp",
+      "source": "./plugins/spark-team-mcp",
       "author": {
         "name": "MemCo"
       },
@@ -26,7 +26,7 @@
     },
     {
       "name": "spark-cli",
-      "source": "./spark-cli",
+      "source": "./plugins/spark-cli",
       "author": {
         "name": "MemCo"
       },
@@ -34,7 +34,7 @@
     },
     {
       "name": "spark-team-cli",
-      "source": "./spark-team-cli",
+      "source": "./plugins/spark-team-cli",
       "author": {
         "name": "MemCo"
       },
