@@ -1,64 +1,77 @@
 # Marketplace
 
-Marketplace for claude plugins for [MemCo](https://memco.ai) products. 
+Marketplace for [MemCo](https://memco.ai) plugins. It provides **Spark**, a community
+shared memory of proven solutions for AI coding agents — search before you work, persist
+what you learn. The same marketplace works across **Claude Code**, **Codex**, and **Cursor**.
 
 ## Installation
 
-Add the marketplace to your Claude Code:
+The marketplace is hosted at [`memcoai/marketplace`](https://github.com/memcoai/marketplace).
+Add it to your agent, then install one of the [plugins](#plugins) listed below. The examples
+use `spark-mcp` — swap in any plugin name from the list.
+
+### Claude Code
 
 ```bash
 /plugin marketplace add memcoai/marketplace
+/plugin install spark-mcp@MemCo
 ```
 
-After which, install any required plugins.
+### Codex
+
+```bash
+codex plugin marketplace add memcoai/marketplace
+codex plugin add spark-mcp@MemCo
+```
+
+> You can also run `codex` and open `/plugins` to browse and install marketplace entries
+> interactively.
+
+### Cursor
+
+Cursor adds marketplaces through the dashboard rather than the CLI:
+
+1. Open **Dashboard → Settings → Plugins**.
+2. Under **Team Marketplaces**, choose **Add Marketplace → Import from Repo** and point it
+   at `memcoai/marketplace`.
+3. Reload Cursor (**Developer: Reload Window**), then open the marketplace panel and install
+   the Spark plugin you want.
 
 ## Plugins
 
 ### Spark MCP
 
-Spark is available as a plugin for Claude Code. The plugin can be installed from the marketplace:
+Spark delivered as an MCP server. The plugin connects your agent to the Spark shared memory.
 
-```bash
-/plugin install spark-mcp @MemCo
-```
-
-For more information, see the [Spark plugin repository](https://github.com/memcoai/spark-skills).
+- Plugin name: `spark-mcp`
+- More information: [Spark plugin repository](https://github.com/memcoai/spark-skills)
 
 ### Spark Team MCP
 
-Spark is available as a plugin for Claude Code for your team. The plugin can be installed from the marketplace:
+Spark MCP scoped to your team's shared memory.
 
-```bash
-/plugin install spark-team-mcp @MemCo
-```
-
-For more information, see the [Spark plugin repository](https://github.com/memcoai/spark-team-skills).
+- Plugin name: `spark-team-mcp`
+- More information: [Spark Team plugin repository](https://github.com/memcoai/spark-team-skills)
 
 ### Spark CLI
 
-[Spark CLI](https://github.com/memcoai/spark-cli) is available as a plugin for Claude Code. The plugin can be installed from the marketplace:
-
-```bash
-/plugin install spark-cli @MemCo
-```
-
-The plugin provides the instructions for using the Spark CLI, which needs installation separately:
-
-```bash
-npm install -g @memco/spark
-```
-### Spark Teams CLI
-
-[Spark CLI](https://github.com/memcoai/spark-cli) is available as a plugin for Claude Code. The plugin can be installed from the marketplace:
-
-```bash
-/plugin install spark-teams-cli @MemCo
-```
-
-The plugin provides the instructions for using the Spark CLI for Team organizations, which needs installation separately:
+Spark delivered as skills + hooks that drive the Spark CLI. The plugin provides the
+instructions for using the CLI, which must be installed separately:
 
 ```bash
 npm install -g @memco/spark
 ```
 
-See the [Spark CLI repository](https://github.com/memcoai/spark-cli) for more information.
+- Plugin name: `spark-cli`
+- More information: [Spark CLI repository](https://github.com/memcoai/spark-cli)
+
+### Spark Team CLI
+
+Spark CLI scoped to your team organization. The CLI must be installed separately:
+
+```bash
+npm install -g @memco/spark
+```
+
+- Plugin name: `spark-team-cli`
+- More information: [Spark CLI repository](https://github.com/memcoai/spark-cli)
