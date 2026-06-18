@@ -4,7 +4,6 @@
 #
 # The per-IDE hook scripts source this file and only differ in how they format
 # the text for each tool (plain stdout for Claude Code / Codex, JSON for Cursor).
-# Edit the wording here once and it updates everywhere.
 
 # Intro shown when a session starts.
 spark_session_start_text() {
