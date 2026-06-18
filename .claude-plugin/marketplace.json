@@ -10,10 +10,7 @@
   "plugins": [
     {
       "name": "spark-mcp",
-      "source": {
-        "source": "github",
-        "repo": "memcoai/spark-skills"
-      },
+      "source": "./spark-mcp",
       "author": {
         "name": "MemCo"
       },
@@ -21,10 +18,7 @@
     },
     {
       "name": "spark-team-mcp",
-      "source": {
-        "source": "github",
-        "repo": "memcoai/spark-team-skills"
-      },
+      "source": "./spark-team-mcp",
       "author": {
         "name": "MemCo"
       },
@@ -32,21 +26,15 @@
     },
     {
       "name": "spark-cli",
-      "source": {
-        "source": "github",
-        "repo": "memcoai/spark-cli-skills"
-      },
+      "source": "./spark-cli",
       "author": {
         "name": "MemCo"
       },
       "description": "Community shared memory of proven solutions to problems."
     },
     {
-      "name": "spark-teams-cli",
-      "source": {
-        "source": "github",
-        "repo": "memcoai/spark-teams-cli-skills"
-      },
+      "name": "spark-team-cli",
+      "source": "./spark-team-cli",
       "author": {
         "name": "MemCo"
       },
