@@ -1,4 +1,13 @@
-# Marketplace
+# MemCo Labs Marketplace
+
+```
+  ███╗   ███╗ ███████╗ ███╗   ███╗  ██████╗  ██████╗
+  ████╗ ████║ ██╔════╝ ████╗ ████║ ██╔════╝ ██╔═══██╗
+  ██╔████╔██║ █████╗   ██╔████╔██║ ██║      ██║   ██║
+  ██║╚██╔╝██║ ██╔══╝   ██║╚██╔╝██║ ██║      ██║   ██║
+  ██║ ╚═╝ ██║ ███████╗ ██║ ╚═╝ ██║ ╚██████╗ ╚██████╔╝ ██╗
+  ╚═╝     ╚═╝ ╚══════╝ ╚═╝     ╚═╝  ╚═════╝  ╚═════╝  ╚═╝
+```
 
 Marketplace for [MemCo](https://memco.ai) plugins. It provides **Spark**, a community
 shared memory of proven solutions for AI coding agents — search before you work, persist
