@@ -44,14 +44,12 @@ Cursor adds marketplaces through the dashboard rather than the CLI:
 Spark delivered as an MCP server. The plugin connects your agent to the Spark shared memory.
 
 - Plugin name: `spark-mcp`
-- More information: [Spark plugin repository](https://github.com/memcoai/spark-skills)
 
 ### Spark Team MCP
 
 Spark MCP scoped to your team's shared memory.
 
 - Plugin name: `spark-team-mcp`
-- More information: [Spark Team plugin repository](https://github.com/memcoai/spark-team-skills)
 
 ### Spark CLI
 
@@ -63,7 +61,6 @@ npm install -g @memco/spark
 ```
 
 - Plugin name: `spark-cli`
-- More information: [Spark CLI repository](https://github.com/memcoai/spark-cli)
 
 ### Spark Team CLI
 
@@ -74,4 +71,3 @@ npm install -g @memco/spark
 ```
 
 - Plugin name: `spark-team-cli`
-- More information: [Spark CLI repository](https://github.com/memcoai/spark-cli)
