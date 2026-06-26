@@ -58,8 +58,7 @@ Then in Cursor:
 The script installs `spark-mcp` by default. Override the defaults with environment variables:
 
 ```bash
-SPARK_PLUGIN=spark-team-mcp \
-  curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-install.sh | SPARK_PLUGIN=spark-team-mcp bash
 ```
 
 | Variable | Default | Purpose |
