@@ -38,7 +38,43 @@ codex plugin add spark-mcp@MemCo
 
 ### Cursor
 
-Cursor adds marketplaces through the dashboard rather than the CLI:
+#### Free / Pro users (install script)
+
+**Team Marketplaces are gated to Teams/Enterprise admins.** If you're on the Free or Pro
+plan, use the install script instead — it drops the plugin straight into Cursor's local
+plugins directory (`~/.cursor/plugins/local/<plugin>`). The result is identical to a
+marketplace install: the full plugin (MCP server + hooks) is loaded.
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-install.sh | bash
+```
+
+Then in Cursor:
+
+1. Reload the window (**Cmd/Ctrl+Shift+P → Developer: Reload Window**), or restart Cursor.
+2. Open **Cursor Settings → Plugins** to confirm **Spark** is listed.
+3. Authenticate Spark in the browser when prompted (OAuth).
+
+The script installs `spark-mcp` by default. Override the defaults with environment variables:
+
+```bash
+SPARK_PLUGIN=spark-team-mcp \
+  curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-install.sh | bash
+```
+
+| Variable | Default | Purpose |
+| --- | --- | --- |
+| `SPARK_PLUGIN` | `spark-mcp` | Plugin to install (e.g. `spark-team-mcp`) |
+| `SPARK_MARKETPLACE_REF` | `main` | Branch or tag to install from |
+| `SPARK_MARKETPLACE_REPO` | `…/memcoai/marketplace.git` | Override the source repo (full git URL) |
+| `CURSOR_HOME` | `~/.cursor` | Override Cursor's home directory |
+
+> Requires `git`. To inspect the script before running it, open
+> [`cursor-install.sh`](cursor-install.sh) or download it first instead of piping to `bash`.
+
+#### Teams / Enterprise (Team Marketplace)
+
+Teams/Enterprise admins can add the marketplace through the dashboard:
 
 1. Open **Dashboard → Settings → Plugins**.
 2. Under **Team Marketplaces**, choose **Add Marketplace → Import from Repo** and point it
