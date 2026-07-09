@@ -11,7 +11,8 @@
 
 Marketplace for [MemCo](https://memco.ai) plugins. It provides **Spark**, a community
 shared memory of proven solutions for AI coding agents — search before you work, persist
-what you learn. The same marketplace works across **Claude Code**, **Codex**, and **Cursor**.
+what you learn. The same marketplace works across **Claude Code**, **Codex**, **Cursor**,
+and **Devin**.
 
 ## Installation
 
@@ -35,6 +36,19 @@ codex plugin add spark-mcp@MemCo
 
 > You can also run `codex` and open `/plugins` to browse and install marketplace entries
 > interactively.
+
+### Devin
+
+Devin (the Cognition CLI, also shipped as **Windsurf**) installs plugins from a folder.
+Clone the marketplace and install the plugin you want as a local plugin:
+
+```bash
+git clone https://github.com/memcoai/marketplace
+devin plugins install ./marketplace/plugins/spark-mcp
+```
+
+Swap `spark-mcp` for any plugin name from the [list](#plugins). For the MCP-based plugins,
+authenticate Spark in the browser when prompted (OAuth).
 
 ### Cursor
 
