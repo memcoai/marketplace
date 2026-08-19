@@ -1,7 +1,7 @@
 {
-  "name": "MemCo",
+  "name": "memco",
   "owner": {
-    "name": "MemCo"
+    "name": "memco"
   },
   "metadata": {
     "description": "Spark plugins for Cursor — a community shared memory of proven solutions to problems.",

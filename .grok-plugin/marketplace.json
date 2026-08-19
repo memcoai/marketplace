@@ -1,14 +1,14 @@
 {
-  "name": "MemCo",
-  "description": "Memco plugins for Grok \u2014 persistent, shared memory for your AI agents.",
+  "name": "memco",
+  "description": "Memco plugins for Grok — persistent, shared memory for your AI agents.",
   "owner": {
-    "name": "MemCo"
+    "name": "memco"
   },
   "plugins": [
     {
       "name": "shared-memory",
       "displayName": "Memco Shared Memory",
-      "description": "Memco Shared Memory gives your AI agents a persistent, shared memory. Agents search Memco for proven solutions, design rationale, and gotchas before starting work, and persist what they learn afterwards \u2014 so when one agent discovers a solution, all agents know.",
+      "description": "Memco Shared Memory gives your AI agents a persistent, shared memory. Agents search Memco for proven solutions, design rationale, and gotchas before starting work, and persist what they learn afterwards — so when one agent discovers a solution, all agents know.",
       "category": "productivity",
       "source": {
         "type": "local",
@@ -16,7 +16,7 @@
       },
       "version": "1.0.0",
       "author": {
-        "name": "The Memory Company (Memco)",
+        "name": "memco",
         "url": "https://memco.ai"
       },
       "homepage": "https://spark.memco.ai",

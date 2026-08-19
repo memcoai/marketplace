@@ -1,4 +1,4 @@
-# MemCo Labs Marketplace
+# memco Labs Marketplace
 
 ```
   ███╗   ███╗ ███████╗ ███╗   ███╗  ██████╗  ██████╗
@@ -9,7 +9,7 @@
   ╚═╝     ╚═╝ ╚══════╝ ╚═╝     ╚═╝  ╚═════╝  ╚═════╝  ╚═╝
 ```
 
-Marketplace for [MemCo](https://memco.ai) plugins. It provides **Spark**, a community
+Marketplace for [memco](https://memco.ai) plugins. It provides **Spark**, a community
 shared memory of proven solutions for AI coding agents — search before you work, persist
 what you learn. The same marketplace works across **Claude Code**, **Codex**, **Cursor**,
 and **Devin**.
@@ -24,14 +24,14 @@ use `spark-mcp` — swap in any plugin name from the list.
 
 ```bash
 /plugin marketplace add memcoai/marketplace
-/plugin install spark-mcp@MemCo
+/plugin install spark-mcp@memco
 ```
 
 ### Codex
 
 ```bash
 codex plugin marketplace add memcoai/marketplace
-codex plugin add spark-mcp@MemCo
+codex plugin add spark-mcp@memco
 ```
 
 > You can also run `codex` and open `/plugins` to browse and install marketplace entries
@@ -56,8 +56,8 @@ authenticate Spark in the browser when prompted (OAuth).
 
 **Team Marketplaces are gated to Teams/Enterprise admins.** If you're on the Free or Pro
 plan, use the install script instead — it drops the plugin straight into Cursor's local
-plugins directory (`~/.cursor/plugins/local/<plugin>`). The result is identical to a
-marketplace install: the full plugin (MCP server + hooks) is loaded.
+plugins directory (`~/.cursor/plugins/local/shared-memory`). The result is identical to a
+marketplace install: the full plugin (MCP server + skill) is loaded.
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-install.sh | bash
@@ -66,18 +66,18 @@ curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-ins
 Then in Cursor:
 
 1. Reload the window (**Cmd/Ctrl+Shift+P → Developer: Reload Window**), or restart Cursor.
-2. Open **Cursor Settings → Plugins** to confirm **Spark** is listed.
-3. Authenticate Spark in the browser when prompted (OAuth).
+2. Open **Cursor Settings → Plugins** to confirm **Memco Shared Memory** is listed.
+3. Authenticate Memco Shared Memory in the browser when prompted (OAuth).
 
-The script installs `spark-mcp` by default. Override the defaults with environment variables:
+The script installs the `shared-memory` plugin. Override the defaults with environment
+variables:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-install.sh | SPARK_PLUGIN=spark-team-mcp bash
+curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-install.sh | SPARK_MARKETPLACE_REF=dev bash
 ```
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
-| `SPARK_PLUGIN` | `spark-mcp` | Plugin to install (e.g. `spark-team-mcp`) |
 | `SPARK_MARKETPLACE_REF` | `main` | Branch or tag to install from |
 | `SPARK_MARKETPLACE_REPO` | `…/memcoai/marketplace.git` | Override the source repo (full git URL) |
 | `CURSOR_HOME` | `~/.cursor` | Override Cursor's home directory |

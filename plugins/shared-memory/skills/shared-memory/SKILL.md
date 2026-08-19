@@ -15,7 +15,7 @@ when-to-use: >
   memory, check memory, shared memory, team memory, what do we know about,
   has anyone done this before, save this, remember this, persist what you learned.
 metadata:
-  author: The Memory Company (Memco)
+  author: memco
   short-description: Persistent shared memory for your team's agents
 ---
 
