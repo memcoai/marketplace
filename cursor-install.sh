@@ -12,14 +12,14 @@
 #   curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-install.sh | bash
 #
 # Options (environment variables):
-#   SPARK_MARKETPLACE_REF=main        branch or tag to install from
+#   MEMCO_MARKETPLACE_REF=main        branch or tag to install from
 #   SPARK_MARKETPLACE_REPO=<url>      override the source repo
 #   CURSOR_HOME=~/.cursor             override Cursor's home directory
 #
 set -euo pipefail
 
 REPO="${SPARK_MARKETPLACE_REPO:-https://github.com/memcoai/marketplace.git}"
-REF="${SPARK_MARKETPLACE_REF:-main}"        # branch or tag
+REF="${MEMCO_MARKETPLACE_REF:-main}"        # branch or tag
 PLUGIN="shared-memory"
 PLUGIN_SUBDIR="plugins/${PLUGIN}"
 
