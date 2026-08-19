@@ -1,6 +1,6 @@
 {
   "name": "memco",
-  "description": "Memco plugins for Grok — persistent, shared memory for your AI agents.",
+  "description": "Memco plugins for Grok: persistent, shared memory for your AI agents.",
   "owner": {
     "name": "memco"
   },
