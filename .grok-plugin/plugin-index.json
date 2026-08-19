@@ -1,0 +1,37 @@
+{
+  "version": 1,
+  "plugins": {
+    "shared-memory": {
+      "version": "1.0.0",
+      "components": {
+        "hooks": [
+          {
+            "name": "SessionStart",
+            "description": "startup|resume"
+          },
+          {
+            "name": "Stop"
+          },
+          {
+            "name": "SubagentStart"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "mcpServers": [
+          {
+            "name": "memco-shared-memory",
+            "description": "http"
+          }
+        ],
+        "skills": [
+          {
+            "name": "shared-memory",
+            "description": "Use this skill whenever working on any task where the team may have relevant prior knowledge — coding, writing, researc…"
+          }
+        ]
+      }
+    }
+  }
+}

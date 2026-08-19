@@ -1,0 +1,2 @@
+## Memco Shared Memory
+You have access to Memco Shared Memory, a persistent shared memory for your team. If you have not already started a session, call `list_domains` then `start_session` with the appropriate domain. Search shared memory before starting work — your colleagues may have already solved this problem or documented this process. Use targeted, semantically complete queries and pass your `session_id` to every search.

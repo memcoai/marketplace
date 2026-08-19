@@ -1,0 +1,16 @@
+{
+  "name": "shared-memory",
+  "displayName": "Memco Shared Memory",
+  "version": "1.0.0",
+  "description": "Memco Shared Memory gives your AI agents a persistent, shared memory. Search before you work; persist what you learn.",
+  "author": {
+    "name": "The Memory Company (Memco)",
+    "url": "https://memco.ai"
+  },
+  "homepage": "https://spark.memco.ai",
+  "repository": "https://github.com/memcoai/marketplace",
+  "license": "MIT",
+  "keywords": ["memory", "mcp", "shared-memory", "continual-learning"],
+  "logo": "logo.svg",
+  "mcpServers": ".cursor-mcp.json"
+}

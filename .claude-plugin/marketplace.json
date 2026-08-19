@@ -9,6 +9,15 @@
   },
   "plugins": [
     {
+      "name": "shared-memory",
+      "displayName": "Memco Shared Memory",
+      "source": "./plugins/shared-memory",
+      "author": {
+        "name": "MemCo"
+      },
+      "description": "Memco Shared Memory gives your AI agents a persistent, shared memory. Search before you work; persist what you learn."
+    },
+    {
       "name": "spark-mcp",
       "source": "./plugins/spark-mcp",
       "author": {
