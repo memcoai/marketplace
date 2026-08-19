@@ -9,33 +9,44 @@
   ╚═╝     ╚═╝ ╚══════╝ ╚═╝     ╚═╝  ╚═════╝  ╚═════╝  ╚═╝
 ```
 
-Marketplace for [memco](https://memco.ai) plugins. It provides **Spark**, a community
-shared memory of proven solutions for AI coding agents — search before you work, persist
-what you learn. The same marketplace works across **Claude Code**, **Codex**, **Cursor**,
-and **Devin**.
+Marketplace for [memco](https://memco.ai) plugins. It provides **Memco Shared Memory**, a
+persistent shared memory for your team's AI agents — search before you work, persist what
+you learn, so when one agent works something out every agent knows it. The same marketplace
+works across **Claude Code**, **Codex**, **Cursor**, **Devin**, and **Grok**.
 
 ## Installation
 
 The marketplace is hosted at [`memcoai/marketplace`](https://github.com/memcoai/marketplace).
-Add it to your agent, then install one of the [plugins](#plugins) listed below. The examples
-use `spark-mcp` — swap in any plugin name from the list.
+Add it to your agent, then install [`shared-memory`](#memco-shared-memory). Swap in any other
+plugin name from the [list](#plugins) if you want one of the others.
 
 ### Claude Code
 
 ```bash
 /plugin marketplace add memcoai/marketplace
-/plugin install spark-mcp@memco
+/plugin install shared-memory@memco
 ```
 
 ### Codex
 
 ```bash
 codex plugin marketplace add memcoai/marketplace
-codex plugin add spark-mcp@memco
+codex plugin add shared-memory@memco
 ```
 
 > You can also run `codex` and open `/plugins` to browse and install marketplace entries
 > interactively.
+
+### Grok
+
+```bash
+grok plugin marketplace add memcoai/marketplace
+grok plugin install shared-memory --trust
+```
+
+> Without `--trust`, Grok shows the source and warns that installing activates the plugin's
+> hooks, MCP servers, and skills, then stops. You can also browse and install from the
+> Plugins tab of the extensions modal (`/plugins`).
 
 ### Devin
 
@@ -44,11 +55,11 @@ Clone the marketplace and install the plugin you want as a local plugin:
 
 ```bash
 git clone https://github.com/memcoai/marketplace
-devin plugins install ./marketplace/plugins/spark-mcp
+devin plugins install ./marketplace/plugins/shared-memory
 ```
 
-Swap `spark-mcp` for any plugin name from the [list](#plugins). For the MCP-based plugins,
-authenticate Spark in the browser when prompted (OAuth).
+Swap `shared-memory` for any plugin name from the [list](#plugins). For the MCP-based
+plugins, authenticate in the browser when prompted (OAuth).
 
 ### Cursor
 
@@ -73,13 +84,13 @@ The script installs the `shared-memory` plugin. Override the defaults with envir
 variables:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-install.sh | SPARK_MARKETPLACE_REF=dev bash
+curl -fsSL https://raw.githubusercontent.com/memcoai/marketplace/main/cursor-install.sh | MEMCO_MARKETPLACE_REF=dev bash
 ```
 
 | Variable | Default | Purpose |
 | --- | --- | --- |
-| `SPARK_MARKETPLACE_REF` | `main` | Branch or tag to install from |
-| `SPARK_MARKETPLACE_REPO` | `…/memcoai/marketplace.git` | Override the source repo (full git URL) |
+| `MEMCO_MARKETPLACE_REF` | `main` | Branch or tag to install from |
+| `MEMCO_MARKETPLACE_REPO` | `…/memcoai/marketplace.git` | Override the source repo (full git URL) |
 | `CURSOR_HOME` | `~/.cursor` | Override Cursor's home directory |
 
 > Requires `git`. To inspect the script before running it, open
@@ -96,6 +107,16 @@ Teams/Enterprise admins can add the marketplace through the dashboard:
    the Spark plugin you want.
 
 ## Plugins
+
+### Memco Shared Memory
+
+Persistent, shared memory for your team's AI agents, delivered as an MCP server plus a skill
+and lifecycle hooks. Agents search it for proven solutions, design rationale, and gotchas
+before starting work, and persist what they learn afterwards. This is the plugin to install;
+it supersedes the four Spark plugins below.
+
+- Plugin name: `shared-memory`
+- [Plugin README](plugins/shared-memory/README.md)
 
 ### Spark MCP
 

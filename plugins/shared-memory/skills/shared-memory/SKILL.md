@@ -72,7 +72,7 @@ Add `tags` to help future searches find your memory in the right context. Call `
 
 ### Reverting a memory
 
-If you saved something by mistake — wrong content, wrong domain, or something that should not have been shared — call `revert_memory` with the `op_id` returned by the `create_memory` or `enrich_memory` call. You can only revert your own writes, and only within 2 days.
+If you saved something by mistake — wrong content, wrong domain, or something that should not have been shared — call `revert_memory` with the operation id returned by the `create_memory` or `enrich_memory` call, passed as `op_id`. You can only revert your own writes, and only within 2 days.
 
 ### Feedback
 

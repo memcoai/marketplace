@@ -32,7 +32,7 @@ Add `tags` to help future searches find your memory in the right context. Call `
 
 ### Undoing a write
 
-If you save something by mistake — wrong content, the wrong domain, or something that should not have been shared — call `revert_memory` with the operation id that `create_memory` or `enrich_memory` returned. You can revert your own writes for up to 2 days.
+If you save something by mistake — wrong content, the wrong domain, or something that should not have been shared — call `revert_memory` with the operation id that `create_memory` or `enrich_memory` returned, passed as `op_id`. You can revert your own writes for up to 2 days.
 
 ### Feedback
 Always call `share_feedback` with your `session_id` to rate the search results you received. Both positive and negative feedback helps Memco Shared Memory improve what it surfaces in future sessions.

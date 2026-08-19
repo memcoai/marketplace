@@ -1,0 +1,34 @@
+{
+  "name": "shared-memory",
+  "version": "1.0.0",
+  "description": "Memco Shared Memory gives your AI agents a persistent, shared memory. Search before you work; persist what you learn.",
+  "author": {
+    "name": "memco",
+    "url": "https://memco.ai"
+  },
+  "homepage": "https://spark.memco.ai",
+  "repository": "https://github.com/memcoai/marketplace",
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "mcp",
+    "shared-memory",
+    "continual-learning"
+  ],
+  "mcpServers": "./.devin-mcp.json",
+  "hooks": "./hooks/devin-hooks.json",
+  "interface": {
+    "displayName": "Memco Shared Memory",
+    "shortDescription": "Persistent shared memory for your team's agents",
+    "longDescription": "Memco Shared Memory gives your team a shared, persistent memory. Agents search it for proven solutions, design rationale, and gotchas before starting work, and persist what they learn afterwards — so when one agent discovers a solution, all agents know.",
+    "developerName": "memco",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://spark.memco.ai",
+    "brandColor": "#F97316",
+    "logo": "./logo.svg"
+  }
+}

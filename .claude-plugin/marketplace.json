@@ -4,7 +4,7 @@
     "name": "memco"
   },
   "metadata": {
-    "description": "Spark is a community shared memory of proven solutions to problems.",
+    "description": "Plugins from memco — persistent, shared memory for your AI agents.",
     "version": "1.4.0"
   },
   "plugins": [

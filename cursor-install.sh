@@ -13,12 +13,12 @@
 #
 # Options (environment variables):
 #   MEMCO_MARKETPLACE_REF=main        branch or tag to install from
-#   SPARK_MARKETPLACE_REPO=<url>      override the source repo
+#   MEMCO_MARKETPLACE_REPO=<url>      override the source repo
 #   CURSOR_HOME=~/.cursor             override Cursor's home directory
 #
 set -euo pipefail
 
-REPO="${SPARK_MARKETPLACE_REPO:-https://github.com/memcoai/marketplace.git}"
+REPO="${MEMCO_MARKETPLACE_REPO:-https://github.com/memcoai/marketplace.git}"
 REF="${MEMCO_MARKETPLACE_REF:-main}"        # branch or tag
 PLUGIN="shared-memory"
 PLUGIN_SUBDIR="plugins/${PLUGIN}"
@@ -52,11 +52,6 @@ mkdir -p "${DEST%/*}"
 rm -rf "${DEST}"
 mkdir -p "${DEST}"
 cp -R "${SRC}/." "${DEST}/"          # the trailing /. copies dotfiles too
-
-# Hook scripts must stay executable.
-if [ -d "${DEST}/scripts" ]; then
-  find "${DEST}/scripts" -type f -name '*.sh' -exec chmod +x {} +
-fi
 
 VERSION="$(sed -n 's/.*"version"[[:space:]]*:[[:space:]]*"\([^"]*\)".*/\1/p' "${DEST}/.cursor-plugin/plugin.json" | head -n1)"
 

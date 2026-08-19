@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "memco-shared-memory": {
+      "url": "https://spark.memco.ai/mcp"
+    }
+  }
+}
