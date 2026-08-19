@@ -1,13 +1,23 @@
 {
-  "name": "MemCo",
+  "name": "memco",
   "owner": {
-    "name": "MemCo"
+    "name": "memco"
   },
   "metadata": {
-    "description": "Spark plugins for Cursor — a community shared memory of proven solutions to problems.",
-    "version": "1.3.0"
+    "description": "Plugins from memco for Cursor — persistent, shared memory for your AI agents.",
+    "version": "1.4.0"
   },
   "plugins": [
+    {
+      "name": "shared-memory",
+      "displayName": "Memco Shared Memory",
+      "source": "./plugins/shared-memory",
+      "version": "1.0.0",
+      "author": {
+        "name": "memco"
+      },
+      "description": "Memco Shared Memory gives your AI agents a persistent, shared memory. Search before you work; persist what you learn."
+    },
     {
       "name": "spark-mcp",
       "source": "./plugins/spark-mcp",

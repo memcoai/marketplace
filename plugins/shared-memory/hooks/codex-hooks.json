@@ -1,0 +1,52 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${PLUGIN_ROOT}/content/session-start.md\"",
+            "statusMessage": "Loading Memco Shared Memory context...",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "SubagentStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${PLUGIN_ROOT}/content/subagent-start.md\"",
+            "statusMessage": "Loading Memco Shared Memory context...",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${PLUGIN_ROOT}/content/user-prompt.md\"",
+            "statusMessage": "Checking Memco Shared Memory...",
+            "timeout": 2
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${PLUGIN_ROOT}/content/stop.md\"",
+            "timeout": 2
+          }
+        ]
+      }
+    ]
+  }
+}
