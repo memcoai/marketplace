@@ -1,0 +1,35 @@
+{
+  "name": "personal-memory",
+  "version": "1.0.0",
+  "description": "Memco Personal Memory gives your agents a private, portable memory of your preferences. Load them at the start of every session; save what you learn.",
+  "author": {
+    "name": "memco",
+    "url": "https://memco.ai"
+  },
+  "homepage": "https://spark.memco.ai",
+  "repository": "https://github.com/memcoai/marketplace",
+  "license": "MIT",
+  "keywords": [
+    "memory",
+    "mcp",
+    "personal-memory",
+    "preferences",
+    "continual-learning"
+  ],
+  "mcpServers": "./.devin-mcp.json",
+  "hooks": "./hooks/devin-hooks.json",
+  "interface": {
+    "displayName": "Memco Personal Memory",
+    "shortDescription": "Private, portable memory for your preferences",
+    "longDescription": "Memco Personal Memory gives your agents a private, portable memory of your preferences. Agents load your identity and preferences at the start of every session and save durable ones as they learn them — so how you like to work travels with you across tools and machines.",
+    "developerName": "memco",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "websiteURL": "https://spark.memco.ai",
+    "brandColor": "#F97316",
+    "logo": "./logo.svg"
+  }
+}

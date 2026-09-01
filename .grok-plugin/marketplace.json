@@ -14,7 +14,7 @@
         "type": "local",
         "path": "./plugins/shared-memory"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "memco",
         "url": "https://memco.ai"
@@ -23,6 +23,31 @@
       "keywords": [
         "memco",
         "memco shared memory",
+        "memco memory"
+      ],
+      "domains": [
+        "memco.ai",
+        "spark.memco.ai"
+      ]
+    },
+    {
+      "name": "personal-memory",
+      "displayName": "Memco Personal Memory",
+      "description": "Memco Personal Memory gives your agents a private, portable memory of your preferences. Agents load your identity and preferences at the start of every session and save durable ones as they learn them — so how you like to work follows you across tools and machines.",
+      "category": "productivity",
+      "source": {
+        "type": "local",
+        "path": "./plugins/personal-memory"
+      },
+      "version": "1.0.0",
+      "author": {
+        "name": "memco",
+        "url": "https://memco.ai"
+      },
+      "homepage": "https://spark.memco.ai",
+      "keywords": [
+        "memco",
+        "memco personal memory",
         "memco memory"
       ],
       "domains": [

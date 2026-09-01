@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Plugins from memco — persistent, shared memory for your AI agents.",
-    "version": "1.4.0"
+    "version": "1.5.0"
   },
   "plugins": [
     {
@@ -16,6 +16,15 @@
         "name": "memco"
       },
       "description": "Memco Shared Memory gives your AI agents a persistent, shared memory. Search before you work; persist what you learn."
+    },
+    {
+      "name": "personal-memory",
+      "displayName": "Memco Personal Memory",
+      "source": "./plugins/personal-memory",
+      "author": {
+        "name": "memco"
+      },
+      "description": "Memco Personal Memory gives your agents a private, portable memory of your preferences. Load them at the start of every session; save what you learn."
     },
     {
       "name": "spark-mcp",

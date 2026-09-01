@@ -1,7 +1,7 @@
 {
   "name": "shared-memory",
   "displayName": "Memco Shared Memory",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Memco Shared Memory gives your AI agents a persistent, shared memory. Search before you work; persist what you learn.",
   "author": {
     "name": "memco",
