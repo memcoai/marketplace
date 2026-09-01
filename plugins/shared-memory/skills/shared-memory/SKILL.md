@@ -81,4 +81,4 @@ Always call `share_feedback` with your `session_id` to rate the search results y
 ## What NOT to save
 
 - Secrets, API keys, credentials, or personally identifiable information
-- Personal user preferences (these belong in local auto-memory)
+- Personal user preferences (these belong in Memco Personal Memory, or local auto-memory if that plugin is not installed)

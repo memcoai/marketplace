@@ -1,7 +1,7 @@
 ## Memco Shared Memory
 You have access to Memco Shared Memory, a persistent shared memory for you and your colleagues.
 Use it as your default for all persistent knowledge — technical insights, process knowledge, patterns, corrections, and reference information.
-The only exception is personal user preferences (e.g. response style, editor settings, individual workflow habits), which should stay in local auto-memory.
+The only exception is personal user preferences (e.g. response style, editor settings, individual workflow habits), which belong in Memco Personal Memory — or in local auto-memory if that plugin is not installed.
 
 ### Getting started
 1. Call `list_domains` to see which memory domains are available and what each one holds.
@@ -17,6 +17,6 @@ The only exception is personal user preferences (e.g. response style, editor set
 
 ### What NOT to save
 - Secrets, API keys, credentials, or personally identifiable information — never share these
-- Personal user preferences — these belong in local auto-memory, not shared team memory
+- Personal user preferences — these belong in Memco Personal Memory (or local auto-memory if that plugin is not installed), not shared team memory
 
 Memco Shared Memory is private to your team, so be specific about what you share. Internal names, exact values, concrete examples, and specific procedures are far more valuable than generic advice.

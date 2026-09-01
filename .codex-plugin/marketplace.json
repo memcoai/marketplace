@@ -5,7 +5,7 @@
   },
   "metadata": {
     "description": "Plugins from memco for Codex — persistent, shared memory for your AI agents.",
-    "version": "1.4.0"
+    "version": "1.5.0"
   },
   "interface": {
     "displayName": "Shared memory plugins from memco"
@@ -18,11 +18,29 @@
         "source": "local",
         "path": "./plugins/shared-memory"
       },
-      "version": "1.0.0",
+      "version": "1.1.0",
       "author": {
         "name": "memco"
       },
       "description": "Memco Shared Memory gives your AI agents a persistent, shared memory. Search before you work; persist what you learn.",
+      "category": "Productivity",
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      }
+    },
+    {
+      "name": "personal-memory",
+      "displayName": "Memco Personal Memory",
+      "source": {
+        "source": "local",
+        "path": "./plugins/personal-memory"
+      },
+      "version": "1.0.0",
+      "author": {
+        "name": "memco"
+      },
+      "description": "Memco Personal Memory gives your agents a private, portable memory of your preferences. Load them at the start of every session; save what you learn.",
       "category": "Productivity",
       "policy": {
         "installation": "AVAILABLE",

@@ -2,7 +2,7 @@
   "version": 1,
   "plugins": {
     "shared-memory": {
-      "version": "1.0.0",
+      "version": "1.1.0",
       "components": {
         "hooks": [
           {
@@ -29,6 +29,32 @@
           {
             "name": "shared-memory",
             "description": "Use this skill whenever working on any task where the team may have relevant prior knowledge — coding, writing, researc…"
+          }
+        ]
+      }
+    },
+    "personal-memory": {
+      "version": "1.0.0",
+      "components": {
+        "hooks": [
+          {
+            "name": "SessionStart",
+            "description": "startup|resume"
+          },
+          {
+            "name": "UserPromptSubmit"
+          }
+        ],
+        "mcpServers": [
+          {
+            "name": "memco-personal-memory",
+            "description": "http"
+          }
+        ],
+        "skills": [
+          {
+            "name": "personal-memory",
+            "description": "Use this skill whenever how the user personally likes to work is relevant — their response style, formatting preference…"
           }
         ]
       }
