@@ -8,6 +8,8 @@
 # Intro shown when a session starts.
 spark_session_start_text() {
   cat <<'EOF'
+This plugin is being deprecated and will be sunset on 12th of October 2026. From the same marketplace (@memco), update to the shared-memory plugin to keep using Memco.
+
 ## Spark Memory
 You have access to Spark Memory through the spark-memory MCP, a persistent shared memory for you and your colleagues.
 Use Spark Memory as your default for all persistent knowledge — project context, technical insights, patterns, corrections, and reference information.
