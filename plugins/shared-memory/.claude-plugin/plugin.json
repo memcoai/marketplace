@@ -4,10 +4,11 @@
   "version": "1.1.0",
   "description": "Memco Shared Memory gives your AI agents a persistent, shared memory. Search before you work; persist what you learn.",
   "author": {
-    "name": "memco",
+    "name": "Memco Labs Inc.",
     "url": "https://memco.ai"
   },
   "homepage": "https://spark.memco.ai",
+  "privacyPolicyUrl": "https://www.memco.ai/privacy",
   "repository": "https://github.com/memcoai/marketplace",
   "license": "MIT",
   "keywords": [
